@@ -1,0 +1,53 @@
+.xerago-header{
+	display:flex;
+    font-family: "PT Sans Regular", sans-serif;
+}
+.xerago-logo{
+	width:300px;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:30pxpx;
+}
+.xerago-logo img{
+	width:95%;
+}
+.xerago-menu{
+  display: inline-block;
+  width: 100%;
+  text-align:right;
+  padding-right: 30px;
+
+}
+.xerago-menuList{
+	display: inline-block;
+    padding: 22px 20px 20px 0px !important;
+    margin: 0px 10px;
+    font-family: "PT Sans Bold";
+  	letter-spacing: 1px !important;
+     font-weight: 600;
+}
+
+.xerago-talk-button{
+	display: inline-block;
+    background: linear-gradient(-46deg, #28eb84 0, #292c89 100%);
+	border-radius: 4px;
+
+    cursor: pointer;
+    transition:0.5s;
+}
+.xerago-talk-button:hover{
+    color:#292c89;
+    }
+.xerago-talk-button a {
+	font-family: "PT Sans Bold";
+  	letter-spacing: 1px !important;
+     font-weight: 600;
+    color : white;
+    padding: 8px 20px;
+
+
+  	  }
+
+.xerago-search-icon{
+	display: inline-block;
+}

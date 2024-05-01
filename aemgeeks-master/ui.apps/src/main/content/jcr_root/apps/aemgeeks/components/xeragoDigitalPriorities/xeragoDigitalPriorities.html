@@ -1,0 +1,15 @@
+<div class="xerago-digital" data-sly-use.model="com.aem.geeks.core.models.XeragoDigitalPriorityModel">
+	<div class="xerago-digital-container">
+		<h2 class="digital-heading"> ${model.digitalHeading}</h2>
+
+	<div class="xerago-sub-section">
+		<div class="xerago-card text-bg-light p-3 text-center rounded-3 pt-4 pb-3 w-100 mx-2" data-sly-repeat.digitalSub="${model.digitalMultifield}">		
+		    <img src="${digitalSub.innerImage}" alt="700+" title="" >
+		    <h4 class="font-gradient fw-bold pt-2 pb-2 pb-md-0 mb-md-1">
+		    <span class="xerago-digital-sub">${digitalSub.subHeading}</span>
+		    </h4>
+		    <div class="paragraph-medium mb-0 xerago-description">${digitalSub.description}</div>
+		</div>
+	</div>
+	</div>
+</div>

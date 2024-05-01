@@ -1,0 +1,15 @@
+<div class="xerago-header" data-sly-use.model="com.aem.geeks.core.models.XeragoHeaderModel">
+
+	<div class="xerago-logo">
+	      <img src="${model.xeragoLogo}" alt="logo">      
+  	</div> 
+  	<div class="xerago-menu">
+  		
+  			<div class="xerago-menuList" data-sly-repeat.menu="${model.mainMenu}"> ${menu.menuItem}</div>
+  			<div class="xerago-talk-button"> 
+  			<a href="${model.talkToButtonUrl}">${model.talkToButton}</a>
+  			</div>
+  			<div class="xerago-search-icon"><img src="${model.searchIcon}" alt="search icon"> </div>
+   		
+  	</div> 
+</div>

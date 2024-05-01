@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Xerago Header Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+		            <column
+		                jcr:primaryType="nt:unstructured"
+		                sling:resourceType="granite/ui/components/coral/foundation/container">
+		                <items jcr:primaryType="nt:unstructured">
+		                    <logo
+		                        jcr:primaryType="nt:unstructured"
+		                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+		                        fieldLabel="Logo"
+		                        fieldDescription="Select logo"
+		                        name="./xeragoLogo"/>
+		                    <column
+				                jcr:primaryType="nt:unstructured"
+				                sling:resourceType="granite/ui/components/coral/foundation/container">
+				                <items jcr:primaryType="nt:unstructured">
+				                    <mainMenu
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+										composite="{Boolean}true" fieldLabel="Main Menu">
+										<field jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/container"
+											name="./mainMenu">
+											<items jcr:primaryType="nt:unstructured">
+												<menuItem jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldLabel="Menu Title"
+				                                    fieldDescription="Enter menu name"  name="./menuItem" />
+				                                
+											</items>
+										</field>
+									</mainMenu>
+								</items>
+							</column>
+							<talkTobutton jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								fieldLabel="Talk to button"
+	                            fieldDescription="Enter button text"  name="./talkToButton" />
+	                        <talkTobuttonUrl
+		                        jcr:primaryType="nt:unstructured"
+		                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+		                        fieldLabel="Talk to button url"
+		                        fieldDescription="Enter button url"
+		                        name="./talkToButtonUrl"/>
+		                    <searchIcon jcr:primaryType="nt:unstructured"
+								sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+								fieldLabel="Search Icon"
+				                fieldDescription="Select Search Icon"  name="./searchIcon" />
+		                </items>
+		            </column>
+        </items>
+    </content>
+</jcr:root>

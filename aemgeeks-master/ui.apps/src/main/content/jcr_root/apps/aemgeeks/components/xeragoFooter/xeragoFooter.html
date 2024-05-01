@@ -1,0 +1,13 @@
+<div class="xerago-footer" data-sly-use.model="com.aem.geeks.core.models.XeragoFooterModel">
+	<div class="footer-logo">
+		<img src="${model.footerLogo}" alt="logo">
+	</div>
+	<div class="xerago-footer-main" >
+		<div class="xerago-footer-list" data-sly-repeat.footerList="${model.footerList}">
+			<h5>${footerList.footerHeading}</h5>
+			<div class="xerago-footer-sublist" data-sly-list.footerSubList="${footerList.footerSubList}">
+				<p>${footerSubList.footerSubHeading}</p>
+			</div>
+		</div>
+	</div>
+</div>

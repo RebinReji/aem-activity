@@ -1,0 +1,32 @@
+.xerago-footer{
+      background: #f7f7f7;
+      padding:76.8px;
+    font-family: "PT Sans Bold", sans-serif;
+    }
+
+.xerago-footer-main{
+	display: flex;
+}
+.xerago-footer-list{
+	padding: 20px !important;
+   	flex: 0 0 auto;
+    width: 16.66666667%;
+    display: inline-block;
+}
+.xerago-footer-list h5{
+
+    font-size: calc(16px + 0.2vw);
+  	font-weight: bold;
+    font-family: "PT Sans Bold", sans-serif;
+    color:black;
+}
+
+.xerago-footer-sublist p{
+    border-bottom: 1px solid #94919138;
+  	line-height: 1.2;
+  	padding: 10px 0px 15px 0px;
+    color: #222;
+    font-size: calc(14px + 0.1vw);
+}
+
+

@@ -1,0 +1,17 @@
+<div class="xerago-highlights" data-sly-use.model="com.aem.geeks.core.models.XeragoHighlightModel">
+	<div class="xerago-high-container">
+		<h2>${model.highHeading}</h2>
+		<p>${model.highSubHeading}</p>
+		<div class="xerago-card-section">
+			<div class="xerago-high-card" data-sly-repeat.eachCard="${model.highCards}">
+				<div class="xerago-card-title">
+					<span>
+						${eachCard.highCardTitle}
+					</span>
+				</div>
+				<p>${eachCard.highCardDes}</p>
+				<a>${eachCard.highMore} >></a>
+			</div>
+		</div>
+	</div>
+</div>

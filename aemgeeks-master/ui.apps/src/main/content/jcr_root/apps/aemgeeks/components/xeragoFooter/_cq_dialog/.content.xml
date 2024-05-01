@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Xerago Header Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+		            <column
+		                jcr:primaryType="nt:unstructured"
+		                sling:resourceType="granite/ui/components/coral/foundation/container">
+		                <items jcr:primaryType="nt:unstructured">
+		                    <logo
+		                        jcr:primaryType="nt:unstructured"
+		                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+		                        fieldLabel="Logo"
+		                        fieldDescription="Select logo"
+		                        name="./footerLogo"/>
+		                    <column
+				                jcr:primaryType="nt:unstructured"
+				                sling:resourceType="granite/ui/components/coral/foundation/container">
+				                <items jcr:primaryType="nt:unstructured">
+				                    <footerList
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+										composite="{Boolean}true" fieldLabel="Footer List">
+										<field jcr:primaryType="nt:unstructured"
+											sling:resourceType="granite/ui/components/coral/foundation/container"
+											name="./footerList">
+											<items jcr:primaryType="nt:unstructured">
+												<footerHeading jcr:primaryType="nt:unstructured"
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldLabel="Footer Heading"
+				                                    fieldDescription="Enter Footer heading"  name="./footerHeading" />
+				                                <column
+									                jcr:primaryType="nt:unstructured"
+									                sling:resourceType="granite/ui/components/coral/foundation/container">
+									                <items jcr:primaryType="nt:unstructured">
+									                    <footerSubList
+															jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+															composite="{Boolean}true" fieldLabel="Footer Sub List">
+															<field jcr:primaryType="nt:unstructured"
+																sling:resourceType="granite/ui/components/coral/foundation/container"
+																name="./footerSubList">
+																<items jcr:primaryType="nt:unstructured">
+																	<footerSubHeading jcr:primaryType="nt:unstructured"
+																		sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+																		fieldLabel="Footer Sub Heading"
+									                                    fieldDescription="Enter Footer sub heading"  name="./footerSubHeading" />
+									                                
+																</items>
+															</field>
+														</footerSubList>
+													</items>
+												</column>
+											</items>
+										</field>
+									</footerList>
+								</items>
+							</column>
+		                </items>
+		            </column>
+        </items>
+    </content>
+</jcr:root>
