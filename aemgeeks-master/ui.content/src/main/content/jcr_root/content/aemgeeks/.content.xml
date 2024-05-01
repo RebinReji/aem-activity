@@ -3,7 +3,7 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="[/apps/aemgeeks/templates/.*]"
+        cq:allowedTemplates="[/apps/aemgeeks/templates/.*, /conf/aemgeeks/settings/wcm/templates/.*]"
         cq:conf="/conf/aemgeeks"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
